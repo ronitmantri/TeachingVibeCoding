@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flight Deck Simulator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header>
+      <h1>Flight Deck Simulator</h1>
+      <p>Use keyboard controls to fly the aircraft. Keep altitude stable and enjoy the horizon view.</p>
+    </header>
+
+    <main>
+      <div class="simulator-panel">
+        <canvas id="flightCanvas" width="1280" height="720"></canvas>
+        <aside class="instrument-panel">
+          <div class="instrument-group">
+            <div class="instrument" id="attitudeGauge">
+              <div class="instrument-label">Attitude</div>
+              <canvas id="horizonCanvas" width="260" height="260"></canvas>
+            </div>
+            <div class="instrument" id="compassGauge">
+              <div class="instrument-label">Heading</div>
+              <div class="instrument-value" id="headingValue">000°</div>
+            </div>
+          </div>
+          <div class="instrument-group">
+            <div class="instrument" id="airspeedGauge">
+              <div class="instrument-label">Airspeed</div>
+              <div class="instrument-value" id="airspeedValue">0 kt</div>
+            </div>
+            <div class="instrument" id="altimeterGauge">
+              <div class="instrument-label">Altitude</div>
+              <div class="instrument-value" id="altimeterValue">0 ft</div>
+            </div>
+          </div>
+          <div class="controls" id="instructions">
+            <h2>Controls</h2>
+            <ul>
+              <li><strong>W/S</strong> — Pitch Down / Up</li>
+              <li><strong>A/D</strong> — Roll Left / Right</li>
+              <li><strong>Q/E</strong> — Yaw Left / Right</li>
+              <li><strong>+</strong> / <strong>-</strong> — Throttle Up / Down</li>
+              <li><strong>Space</strong> — Pause / Resume</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <footer>
+      <p>Built with HTML5 Canvas and JavaScript physics.</p>
+    </footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

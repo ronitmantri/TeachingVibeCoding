@@ -1,0 +1,14 @@
+# Node modules
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+*.log
+
+# Python HTTP server cache
+__pycache__/
+*.pyc

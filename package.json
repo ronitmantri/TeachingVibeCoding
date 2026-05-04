@@ -1,0 +1,15 @@
+{
+  "name": "flight-deck-simulator",
+  "version": "1.0.0",
+  "description": "Browser-based flight deck simulator built with HTML5 canvas and JavaScript.",
+  "main": "index.html",
+  "scripts": {
+    "serve": "live-server --port=8080 --open=./index.html",
+    "start": "npm run serve"
+  },
+  "author": "TeachingVibeCoding",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
